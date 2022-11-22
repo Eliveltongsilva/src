@@ -1,0 +1,11 @@
+{
+    "customer": {
+        "column": {
+            "id": true,
+            "name": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
