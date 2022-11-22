@@ -10,6 +10,7 @@ use Mastering\SampleModule\Model\ItemFactory;
 use Magento\Framework\Console\Cli;
 
 /**
+ * necessário criação do di.xml
  * command in terminal:
  * bin/magento c:f
  * bin/magento s:up
