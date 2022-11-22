@@ -109,7 +109,7 @@ class BatchInsert
     /**
      * Retrieve current connection to DB
      *
-     * Method is required to eliminate multiple calls to ResourceConnection class
+     * Method is required to eliminate multiple calls to BlockResourceConnection class
      *
      * @return \Magento\Framework\DB\Adapter\AdapterInterface
      */

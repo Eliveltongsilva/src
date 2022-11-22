@@ -343,7 +343,7 @@ class AbstractBlockTest extends \PHPUnit\Framework\TestCase
         $this->assertEmpty($html);
 
         // With layout
-        $expected = 'Teste';
+        $expected = 'BlockResourceConnection';
         $block2 = $this->_createBlockWithLayout('block2', 'block2', \Magento\Framework\View\Element\Text::class);
         $block3 = $this->_createBlockWithLayout('block3', 'block3');
         $block2->setText($expected);

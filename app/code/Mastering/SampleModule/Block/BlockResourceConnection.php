@@ -5,14 +5,14 @@ namespace Mastering\SampleModule\Block;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\App\ResourceConnection;
 
-class Teste extends Template
+class BlockResourceConnection extends Template
 {
 
     const CUSTOMER_TABLE = 'customer';
     const NAME_FIELD = 'name';
 
     /**
-     * @var ResourceConnection
+     * @var BlockResourceConnection
      */
     private $resourceConnection;
 

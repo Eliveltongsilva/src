@@ -140,7 +140,7 @@ class ObjectManagerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Returns ResourceConnection.
+     * Returns BlockResourceConnection.
      *
      * @return ResourceConnection
      */

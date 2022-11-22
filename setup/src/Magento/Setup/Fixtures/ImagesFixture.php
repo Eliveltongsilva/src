@@ -509,7 +509,7 @@ class ImagesFixture extends Fixture
     /**
      * Retrieve current connection to DB
      *
-     * Method is required to eliminate multiple calls to ResourceConnection class
+     * Method is required to eliminate multiple calls to BlockResourceConnection class
      *
      * @return \Magento\Framework\DB\Adapter\AdapterInterface
      */
@@ -526,7 +526,7 @@ class ImagesFixture extends Fixture
      * Retrieve real table name
      *
      * Method act like a cache for already retrieved table names
-     * is required to eliminate multiple calls to ResourceConnection class
+     * is required to eliminate multiple calls to BlockResourceConnection class
      *
      * @param string $tableName
      * @return string
