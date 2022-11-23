@@ -3,6 +3,8 @@
     <module name="Mastering_SampleModule" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Catalog"/>
+            <!--    Sales->Orders-->
+            <module name="Magento_Sales"/>
         </sequence>
     </module>
 </config>
