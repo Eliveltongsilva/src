@@ -8,6 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Mastering\SampleModule\Model\ItemFactory;
 use Magento\Framework\Console\Cli;
+use Psr\Log\LoggerInterface;
 
 /**
  * necessário criação do di.xml
@@ -25,9 +26,17 @@ class AddItem extends Command
      */
     private $itemFactory;
 
-    public function __construct(ItemFactory $itemFactory)
+    /**
+     * Undocumented variable
+     *
+     * @var LoggerInterface
+     */
+    private $logger;
+
+    public function __construct(ItemFactory $itemFactory, LoggerInterface $logger)
     {
         $this->itemFactory = $itemFactory;
+        $this->logger = $logger;
         parent::__construct();
     }
 
@@ -52,6 +61,7 @@ class AddItem extends Command
         $item->setName($input->getArgument(self::INPUT_KEY_NAME));
         $item->setIsObjectNew(true);
         $item->save();
+        $this->logger->debug('Item was created teste!');
         return Cli::RETURN_SUCCESS;
     }
 }
